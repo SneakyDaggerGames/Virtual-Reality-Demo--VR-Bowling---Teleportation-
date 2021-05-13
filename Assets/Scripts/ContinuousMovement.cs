@@ -13,6 +13,8 @@ public class ContinuousMovement : MonoBehaviour
     private float gravity = -9.8f;
     private float fallingSpeed;
 
+    private float heightOffset = 0.2f;
+
     private Vector2 inputAxis;
     private XRRig rig;  
     private CharacterController character;
@@ -26,6 +28,8 @@ public class ContinuousMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        CapsuleFollowHeadset();
+        
         Quaternion headYaw = Quaternion.Euler(0, rig.cameraGameObject.transform.eulerAngles.y, 0);
         Vector3 direction = headYaw * new Vector3(inputAxis.x, 0, inputAxis.y);
         character.Move(direction * speed * Time.deltaTime);
@@ -56,6 +60,13 @@ public class ContinuousMovement : MonoBehaviour
     {
         InputDevice device = InputDevices.GetDeviceAtXRNode(inputSource);
         device.TryGetFeatureValue(CommonUsages.primary2DAxis, out inputAxis);
+    }
+
+    void CapsuleFollowHeadset()
+    {
+        character.height = rig.cameraInRigSpaceHeight + heightOffset;
+        Vector3 capsuleCenter = transform.InverseTransformPoint(rig.cameraGameObject.transform.position);
+        character.center = new Vector3(capsuleCenter.x, character.height / 2 + character.skinWidth, capsuleCenter.z);
     }
 
     

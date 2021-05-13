@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 78659226}
+  - component: {fileID: 78659227}
   m_Layer: 6
   m_Name: RampAssembly
   m_TagString: Untagged
@@ -162,6 +163,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &78659227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78659225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 578780472}
+  m_Colliders:
+  - {fileID: 1199048681}
+  - {fileID: 2112353332}
+  - {fileID: 1833211774}
+  - {fileID: 1105921412}
+  - {fileID: 2106259542}
+  - {fileID: 1389756757}
+  - {fileID: 1516532454}
+  - {fileID: 1833610820}
+  - {fileID: 382093943}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CustomReticle: {fileID: 0}
+  m_TeleportationProvider: {fileID: 0}
+  m_MatchOrientation: 0
+  m_TeleportTrigger: 0
 --- !u!1001 &92206835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1648,6 +1706,7 @@ GameObject:
   - component: {fileID: 798129948}
   - component: {fileID: 798129951}
   - component: {fileID: 798129950}
+  - component: {fileID: 798129952}
   m_Layer: 0
   m_Name: VR Rig
   m_TagString: Untagged
@@ -1750,7 +1809,28 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   gravity: -9.8
-  speed: 1
+  speed: 2
+--- !u!114 &798129952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798129945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 0}
+  m_TurnAmount: 30
+  m_DebounceTime: 0.2
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_TurnUsage: 0
+  m_Controllers:
+  - {fileID: 1287371365}
+  m_DeadZone: 0.75
 --- !u!1 &850921499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1977,6 +2057,7 @@ GameObject:
   - component: {fileID: 1036156157}
   - component: {fileID: 1036156156}
   - component: {fileID: 1036156155}
+  - component: {fileID: 1036156159}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -2060,6 +2141,54 @@ Transform:
   m_Father: {fileID: 850921500}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1036156159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036156154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 578780472}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CustomReticle: {fileID: 0}
+  m_TeleportationProvider: {fileID: 0}
+  m_MatchOrientation: 0
+  m_TeleportTrigger: 0
 --- !u!1 &1040780082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,6 +3041,7 @@ GameObject:
   - component: {fileID: 1300305522}
   - component: {fileID: 1300305521}
   - component: {fileID: 1300305525}
+  - component: {fileID: 1300305526}
   m_Layer: 6
   m_Name: Bowling Lane
   m_TagString: Untagged
@@ -3011,6 +3141,54 @@ MonoBehaviour:
   pinsPos: {fileID: 1632331153}
   bowlingBall: {fileID: 1096088600952877696, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
   ballPos: {fileID: 585690581}
+--- !u!114 &1300305526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300305520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 578780472}
+  m_Colliders: []
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_OnFirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnLastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectCanceled:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnActivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnDeactivate:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CustomReticle: {fileID: 0}
+  m_TeleportationProvider: {fileID: 0}
+  m_MatchOrientation: 0
+  m_TeleportTrigger: 0
 --- !u!1 &1359001535
 GameObject:
   m_ObjectHideFlags: 0
