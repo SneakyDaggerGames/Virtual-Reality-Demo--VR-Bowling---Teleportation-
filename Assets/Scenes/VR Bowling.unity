@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 78659226}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RampAssembly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -655,7 +655,7 @@ GameObject:
   - component: {fileID: 278453692}
   - component: {fileID: 278453691}
   - component: {fileID: 278453690}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -799,7 +799,7 @@ GameObject:
   - component: {fileID: 327300475}
   - component: {fileID: 327300474}
   - component: {fileID: 327300473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +942,7 @@ GameObject:
   - component: {fileID: 382093945}
   - component: {fileID: 382093944}
   - component: {fileID: 382093943}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RampSmall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 387902866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1099,7 +1099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 525002353}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1375,7 +1375,7 @@ GameObject:
   - component: {fileID: 743301507}
   - component: {fileID: 743301506}
   - component: {fileID: 743301505}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,12 +1727,12 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.15
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &798129951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1746,6 +1746,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputSource: 4
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  gravity: -9.8
+  speed: 1
 --- !u!1 &850921499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1795,7 +1800,7 @@ GameObject:
   - component: {fileID: 880685008}
   - component: {fileID: 880685007}
   - component: {fileID: 880685006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2068,7 +2073,7 @@ GameObject:
   - component: {fileID: 1040780086}
   - component: {fileID: 1040780085}
   - component: {fileID: 1040780084}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2211,7 +2216,7 @@ GameObject:
   - component: {fileID: 1105921414}
   - component: {fileID: 1105921413}
   - component: {fileID: 1105921412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2306,7 +2311,7 @@ GameObject:
   - component: {fileID: 1109539412}
   - component: {fileID: 1109539411}
   - component: {fileID: 1109539410}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2402,7 +2407,7 @@ GameObject:
   - component: {fileID: 1199048683}
   - component: {fileID: 1199048682}
   - component: {fileID: 1199048681}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2498,7 +2503,7 @@ GameObject:
   - component: {fileID: 1240284731}
   - component: {fileID: 1240284730}
   - component: {fileID: 1240284729}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2907,7 +2912,7 @@ GameObject:
   - component: {fileID: 1300305522}
   - component: {fileID: 1300305521}
   - component: {fileID: 1300305525}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bowling Lane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3019,7 +3024,7 @@ GameObject:
   - component: {fileID: 1359001538}
   - component: {fileID: 1359001537}
   - component: {fileID: 1359001536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teleportation Anchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3165,7 +3170,7 @@ GameObject:
   - component: {fileID: 1389756759}
   - component: {fileID: 1389756758}
   - component: {fileID: 1389756757}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RampLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3261,7 +3266,7 @@ GameObject:
   - component: {fileID: 1509917785}
   - component: {fileID: 1509917784}
   - component: {fileID: 1509917783}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teleportation Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3405,7 +3410,7 @@ GameObject:
   - component: {fileID: 1516532456}
   - component: {fileID: 1516532455}
   - component: {fileID: 1516532454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RampSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3631,7 +3636,7 @@ GameObject:
   - component: {fileID: 1622427574}
   - component: {fileID: 1622427573}
   - component: {fileID: 1622427572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3886,7 +3891,7 @@ GameObject:
   - component: {fileID: 1816478375}
   - component: {fileID: 1816478374}
   - component: {fileID: 1816478373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4029,7 +4034,7 @@ GameObject:
   - component: {fileID: 1833211776}
   - component: {fileID: 1833211775}
   - component: {fileID: 1833211774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4124,7 +4129,7 @@ GameObject:
   - component: {fileID: 1833610822}
   - component: {fileID: 1833610821}
   - component: {fileID: 1833610820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlatformLarge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9024,7 +9029,7 @@ GameObject:
   - component: {fileID: 1864798599}
   - component: {fileID: 1864798598}
   - component: {fileID: 1864798597}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9251,7 +9256,7 @@ GameObject:
   - component: {fileID: 1928222162}
   - component: {fileID: 1928222161}
   - component: {fileID: 1928222160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9395,7 +9400,7 @@ GameObject:
   - component: {fileID: 2053692837}
   - component: {fileID: 2053692836}
   - component: {fileID: 2053692835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9538,7 +9543,7 @@ GameObject:
   - component: {fileID: 2106259544}
   - component: {fileID: 2106259543}
   - component: {fileID: 2106259542}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9633,7 +9638,7 @@ GameObject:
   - component: {fileID: 2112353334}
   - component: {fileID: 2112353333}
   - component: {fileID: 2112353332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
