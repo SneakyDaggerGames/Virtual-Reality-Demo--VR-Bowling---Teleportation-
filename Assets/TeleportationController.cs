@@ -15,6 +15,7 @@ public class TeleportationController : MonoBehaviour
     {
         if (rightTeleportRay)
         {
+           
             rightTeleportRay.gameObject.SetActive(EnableRightTeleport && CheckIfActivated(rightTeleportRay));
         }
     }
