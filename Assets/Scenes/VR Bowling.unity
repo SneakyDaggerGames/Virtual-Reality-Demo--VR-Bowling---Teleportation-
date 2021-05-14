@@ -231,6 +231,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877696, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877722, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -591,7 +599,7 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 247
   m_RaycastTriggerInteraction: 1
   m_KeepSelectedTargetValid: 1
   m_HoverToSelect: 0
@@ -648,6 +656,10 @@ PrefabInstance:
     - target: {fileID: 1096088600952877696, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
       propertyPath: m_Name
       value: Ball (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877696, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
       propertyPath: m_RootOrder
@@ -1276,9 +1288,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877696, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877722, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_MovementType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.22303745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.22303745
+      objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.22303745
       objectReference: {fileID: 0}
     - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1575,6 +1607,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1096088600952877696, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1096088600952877723, guid: cec3a496af0e1a947b446bd1fd54585a, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1707,7 +1743,8 @@ GameObject:
   - component: {fileID: 798129951}
   - component: {fileID: 798129950}
   - component: {fileID: 798129952}
-  m_Layer: 0
+  - component: {fileID: 798129953}
+  m_Layer: 7
   m_Name: VR Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1831,6 +1868,21 @@ MonoBehaviour:
   m_Controllers:
   - {fileID: 1287371365}
   m_DeadZone: 0.75
+--- !u!114 &798129953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798129945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4a95884ba2a6140a7589e6ee379022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightTeleportRay: {fileID: 99822323}
+  teleportActivationButton: 2
+  activationThreshold: 0.1
 --- !u!1 &850921499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +3059,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -3016,15 +3068,15 @@ MonoBehaviour:
   m_AudioClipForOnHoverEntered: {fileID: 0}
   m_PlayAudioClipOnHoverExited: 0
   m_AudioClipForOnHoverExited: {fileID: 0}
-  m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
+  m_PlayHapticsOnSelectEntered: 1
+  m_HapticSelectEnterIntensity: 0.3
+  m_HapticSelectEnterDuration: 0.1
   m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
-  m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_PlayHapticsOnHoverEntered: 1
+  m_HapticHoverEnterIntensity: 0.1
+  m_HapticHoverEnterDuration: 0.1
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -3780,7 +3832,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SelectActionTrigger: 0
-  m_HideControllerOnSelect: 0
+  m_HideControllerOnSelect: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -3789,15 +3841,15 @@ MonoBehaviour:
   m_AudioClipForOnHoverEntered: {fileID: 0}
   m_PlayAudioClipOnHoverExited: 0
   m_AudioClipForOnHoverExited: {fileID: 0}
-  m_PlayHapticsOnSelectEntered: 0
-  m_HapticSelectEnterIntensity: 0
-  m_HapticSelectEnterDuration: 0
+  m_PlayHapticsOnSelectEntered: 1
+  m_HapticSelectEnterIntensity: 0.3
+  m_HapticSelectEnterDuration: 0.1
   m_PlayHapticsOnSelectExited: 0
   m_HapticSelectExitIntensity: 0
   m_HapticSelectExitDuration: 0
-  m_PlayHapticsOnHoverEntered: 0
-  m_HapticHoverEnterIntensity: 0
-  m_HapticHoverEnterDuration: 0
+  m_PlayHapticsOnHoverEntered: 1
+  m_HapticHoverEnterIntensity: 0.1
+  m_HapticHoverEnterDuration: 0.1
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
